@@ -39,23 +39,6 @@ const CONFIG = {
         }
     },
 
-    // 💖 Add Celebration Image (Cloudinary)
-if (CONFIG.celebration.image && CONFIG.celebration.image.enabled) {
-    const img = document.createElement("img");
-    img.src = CONFIG.celebration.image.url;
-    img.style.width = CONFIG.celebration.image.width;
-    img.style.marginTop = "20px";
-    img.style.borderRadius = CONFIG.celebration.image.borderRadius;
-    img.style.maxWidth = "90%";
-
-    if (CONFIG.celebration.image.shadow) {
-        img.style.boxShadow = "0 10px 25px rgba(0,0,0,0.25)";
-    }
-
-    img.style.animation = "fadeIn 1s ease";
-
-    celebrationContainer.appendChild(img); // keep your container name
-}
 
     // Love meter messages
     // They show up depending on how far they slide the meter
